@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Memory Forensics for Malware Forensics
 
 > 🧠 Advanced memory forensics and malware analysis toolkit with a modern web-based dashboard
