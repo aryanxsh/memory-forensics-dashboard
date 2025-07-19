@@ -194,6 +194,62 @@
     }
 }
 
+/* Recent Activity Styling */
+.recent-activity {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.activity-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #e9ecef;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-item:hover {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.activity-item span {
+    color: #333;
+    font-weight: 500;
+}
+
+.activity-item small {
+    color: #6c757d !important;
+}
+
+.activity-item i {
+    color: #667eea;
+}
+
+/* Activity status colors */
+.activity-item .fa-check {
+    color: #28a745;
+}
+
+.activity-item .fa-clock {
+    color: #ffc107;
+}
+
+.activity-item .fa-exclamation-triangle {
+    color: #dc3545;
+}
+
+.activity-item .fa-info-circle {
+    color: #17a2b8;
+}
+
 /* Print styles */
 @media print {
     .navbar,
