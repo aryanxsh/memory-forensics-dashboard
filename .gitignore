@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Flask
+instance/
+.webassets-cache
+
+# Volatility3 (will be cloned automatically)
+volatility3/
+
+# Output files (optional - you might want to keep these)
+# static/volatility_output/
+# static/yara_output/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Memory dumps (for security)
+*.dmp
+*.raw
+*.img
+*.vmem
+*.mem
+
+# Test files
+test_*.py 
