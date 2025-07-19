@@ -1,29 +1,37 @@
-<<<<<<< HEAD
-# Memory Forensics for Malware Forensics
+# Memory Forensics Dashboard
 
 > 🧠 Advanced memory forensics and malware analysis toolkit with a modern web-based dashboard
+
+[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/downloads/)
+[![Flask](https://img.shields.io/badge/Flask-2.3.3-green.svg)](https://flask.palletsprojects.com/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-purple.svg)](https://getbootstrap.com/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## 🚀 Features
 
 - **Modern Web Dashboard**: Beautiful, responsive interface built with Bootstrap 5
 - **Volatility3 Integration**: Advanced memory forensics analysis
-- **YARA Scanner**: Pattern-based malware detection with extensive rule set
+- **YARA Scanner**: Pattern-based malware detection with 491+ rules
 - **Real-time Statistics**: Live updates of reports, rules, and scan status
 - **File Management**: View, download, and analyze generated reports
 - **Responsive Design**: Works on desktop, tablet, and mobile devices
+- **Professional UI**: Gradient backgrounds, animations, and modern UX
 
 ## 📋 Prerequisites
 
 - Python 3.7 or higher
 - Windows 10/11 (for Windows-specific memory analysis)
 - Administrator privileges (for some Volatility operations)
+- Git (for cloning the repository)
 
 ## 🛠️ Installation
 
+### Quick Start
+
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/YogeshJain1003/Memory-Forensics-for-Malware-Forensics.git
-   cd Memory-Forensics-for-Malware-Forensics
+   git clone https://github.com/aryanxsh/memory-forensics-dashboard.git
+   cd memory-forensics-dashboard
    ```
 
 2. **Install Dependencies:**
@@ -31,38 +39,38 @@
    pip install -r requirements.txt
    ```
 
-3. **Verify Directory Structure:**
-   ```
-   Memory-Forensics-for-Malware-Forensics/
-   ├── app.py                 # Main Flask application
-   ├── requirements.txt       # Python dependencies
-   ├── README.md             # This file
-   ├── static/               # Static files and outputs
-   │   ├── volatility_output/ # Volatility analysis results
-   │   └── yara_output/      # YARA scan results
-   ├── templates/            # HTML templates
-   │   ├── index.html        # Main dashboard
-   │   └── files.html        # File listing page
-   ├── scripts/              # Analysis scripts
-   │   ├── volatility_gui.py # Volatility GUI
-   │   ├── yara_scanner.py  # YARA Scanner GUI
-   │   └── rules/           # YARA rule collection
-   └── volatility3/         # Volatility3 framework
-   ```
-
-## 🚀 Quick Start
-
-1. **Start the Web Dashboard:**
+3. **Start the Dashboard:**
    ```bash
    python app.py
    ```
 
-2. **Access the Dashboard:**
+4. **Access the Dashboard:**
    Open your browser and navigate to: `http://localhost:5000`
 
-3. **Launch Analysis Tools:**
-   - Click "Launch Volatility GUI" to start memory analysis
-   - Click "Launch YARA Scanner" to run malware detection
+### Directory Structure
+
+```
+memory-forensics-dashboard/
+├── app.py                 # Main Flask application
+├── requirements.txt       # Python dependencies
+├── README.md             # This file
+├── .gitignore           # Git ignore rules
+├── static/               # Static files and outputs
+│   ├── css/             # Custom CSS styles
+│   ├── js/              # JavaScript functionality
+│   ├── volatility_output/ # Volatility analysis results
+│   └── yara_output/      # YARA scan results
+├── templates/            # HTML templates
+│   ├── index.html        # Main dashboard
+│   └── files.html        # File listing page
+├── scripts/              # Analysis scripts
+│   ├── volatility_gui.py # Volatility GUI
+│   ├── yara_scanner.py  # YARA Scanner GUI
+│   └── rules/           # YARA rule collection (491+ rules)
+├── start.bat            # Windows startup script
+├── start.sh             # Linux/Mac startup script
+└── volatility3/         # Volatility3 framework
+```
 
 ## 🎯 Usage Guide
 
@@ -77,9 +85,18 @@ The dashboard provides:
 ### Volatility Analysis
 
 1. Click "Launch Volatility GUI" from the dashboard
-2. Select your memory dump file
+2. Select your memory dump file (.dmp, .raw, .img, .vmem)
 3. Choose analysis plugins (processes, network, registry, etc.)
 4. Review generated reports in the "Volatility Reports" section
+
+**Available Plugins:**
+- `windows.pslist` - Process listing
+- `windows.pstree` - Process tree
+- `windows.dlllist` - DLL listing
+- `windows.filescan` - File scanning
+- `windows.registry.hivelist` - Registry analysis
+- `windows.malfind` - Malware detection
+- And many more...
 
 ### YARA Scanning
 
@@ -87,6 +104,14 @@ The dashboard provides:
 2. Select target files or directories
 3. Choose YARA rule sets (APT groups, malware families, etc.)
 4. Review scan results in the "YARA Scan Logs" section
+
+**YARA Rule Categories:**
+- **APT Groups**: Advanced Persistent Threat detection
+- **Malware Families**: Known malware signatures
+- **Exploit Kits**: Common exploit frameworks
+- **Ransomware**: Various ransomware families
+- **RATs**: Remote Access Trojans
+- **Webshells**: Web-based backdoors
 
 ### Viewing Reports
 
@@ -99,11 +124,13 @@ The dashboard provides:
 
 ### YARA Rules
 
-The project includes an extensive collection of YARA rules:
+The project includes an extensive collection of 491+ YARA rules:
 - **APT Groups**: Advanced Persistent Threat detection rules
 - **Malware Families**: Known malware family signatures
 - **Exploit Kits**: Detection for common exploit frameworks
-- **Custom Rules**: Domain-specific detection patterns
+- **Ransomware**: Various ransomware detection patterns
+- **RATs**: Remote Access Trojan signatures
+- **Webshells**: Web-based backdoor detection
 
 ### Output Directories
 
@@ -143,6 +170,7 @@ The dashboard uses Bootstrap 5 with custom CSS. Key styling classes:
 - **Network Access**: The dashboard runs on `0.0.0.0:5000` by default
 - **Administrator Rights**: Some Volatility operations require elevated privileges
 - **Memory Dumps**: Handle sensitive memory dumps with appropriate security measures
+- **YARA Rules**: Keep rules updated for latest threat detection
 
 ## 🐛 Troubleshooting
 
@@ -167,6 +195,10 @@ The dashboard uses Bootstrap 5 with custom CSS. Key styling classes:
    - Ensure volatility3 directory is present
    - Check Python path and dependencies
 
+5. **YARA Rules Not Loading:**
+   - Verify scripts/rules directory exists
+   - Check for syntax errors in YARA files
+
 ### Debug Mode
 
 Enable debug mode for detailed error messages:
@@ -181,17 +213,39 @@ app.run(debug=True, host='0.0.0.0', port=5000)
 - **Output Management**: Regularly clean up old reports
 - **Resource Monitoring**: Monitor system resources during analysis
 
+## 🚀 Quick Commands
+
+### Windows
+```bash
+# Start with batch file
+start.bat
+
+# Or manually
+python app.py
+```
+
+### Linux/Mac
+```bash
+# Start with shell script
+./start.sh
+
+# Or manually
+python3 app.py
+```
+
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Make your changes
 4. Test thoroughly
-5. Submit a pull request
+5. Commit your changes (`git commit -m 'Add amazing feature'`)
+6. Push to the branch (`git push origin feature/amazing-feature`)
+7. Open a Pull Request
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -199,19 +253,25 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **YARA Project**: For the pattern matching engine
 - **Bootstrap Team**: For the responsive CSS framework
 - **Font Awesome**: For the icon library
+- **Flask Team**: For the web framework
 
 ## 📞 Support
 
 For issues and questions:
-- Create an issue on GitHub
+- Create an issue on [GitHub](https://github.com/aryanxsh/memory-forensics-dashboard/issues)
 - Check the troubleshooting section
 - Review the documentation
 
+## 📊 Project Stats
+
+- **514 files** committed
+- **158,667 lines** of code
+- **491+ YARA rules** included
+- **Modern web interface** with Bootstrap 5
+- **Real-time dashboard** with live statistics
+
 ---
 
-**⚠️ Important Note**: Some directory names are **hardcoded**, such as `Memory-Forensics-for-Malware-Forensics` in `scripts/volatile.py` as a parent folder. Please ensure your project directory name matches or update paths accordingly.
+**⭐ Star this repository if you find it useful!**
 
- 
-=======
-"# memory-forensics-dashboard" 
->>>>>>> 4903ed5ff30ee4649dc86961c1331c4203c8f7e7
+**🔗 Repository**: https://github.com/aryanxsh/memory-forensics-dashboard
