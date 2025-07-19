@@ -1,13 +1,13 @@
 # Memory Forensics Dashboard
 
-> 🧠 Advanced memory forensics and malware analysis toolkit with a modern web-based dashboard
+>  Advanced memory forensics and malware analysis toolkit with a modern web-based dashboard
 
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/downloads/)
 [![Flask](https://img.shields.io/badge/Flask-2.3.3-green.svg)](https://flask.palletsprojects.com/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-purple.svg)](https://getbootstrap.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## 🚀 Features
+##  Features
 
 - **Modern Web Dashboard**: Beautiful, responsive interface built with Bootstrap 5
 - **Volatility3 Integration**: Advanced memory forensics analysis
@@ -17,14 +17,14 @@
 - **Responsive Design**: Works on desktop, tablet, and mobile devices
 - **Professional UI**: Gradient backgrounds, animations, and modern UX
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Python 3.7 or higher
 - Windows 10/11 (for Windows-specific memory analysis)
 - Administrator privileges (for some Volatility operations)
 - Git (for cloning the repository)
 
-## 🛠️ Installation
+##  Installation
 
 ### Quick Start
 
@@ -72,7 +72,7 @@ memory-forensics-dashboard/
 └── volatility3/         # Volatility3 framework
 ```
 
-## 🎯 Usage Guide
+##  Usage Guide
 
 ### Dashboard Overview
 
@@ -120,7 +120,7 @@ The dashboard provides:
 - **File Downloads**: Download reports for external analysis
 - **In-browser Viewing**: Text-based reports display directly in browser
 
-## 🔧 Configuration
+##  Configuration
 
 ### YARA Rules
 
@@ -147,7 +147,7 @@ The dashboard provides several API endpoints:
 - `POST /run-volatility`: Launch Volatility GUI
 - `POST /run-yara`: Launch YARA Scanner
 
-## 🎨 Customization
+##  Customization
 
 ### Styling
 
@@ -164,7 +164,7 @@ The dashboard uses Bootstrap 5 with custom CSS. Key styling classes:
 3. Update the dashboard template to include your tool
 4. Add appropriate styling and icons
 
-## 🔒 Security Considerations
+##  Security Considerations
 
 - **File Permissions**: Ensure proper file permissions for output directories
 - **Network Access**: The dashboard runs on `0.0.0.0:5000` by default
@@ -172,7 +172,7 @@ The dashboard uses Bootstrap 5 with custom CSS. Key styling classes:
 - **Memory Dumps**: Handle sensitive memory dumps with appropriate security measures
 - **YARA Rules**: Keep rules updated for latest threat detection
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -206,14 +206,14 @@ Enable debug mode for detailed error messages:
 app.run(debug=True, host='0.0.0.0', port=5000)
 ```
 
-## 📈 Performance Tips
+##  Performance Tips
 
 - **Large Memory Dumps**: Use appropriate Volatility plugins for large files
 - **YARA Rules**: Optimize rule sets for your specific use case
 - **Output Management**: Regularly clean up old reports
 - **Resource Monitoring**: Monitor system resources during analysis
 
-## 🚀 Quick Commands
+##  Quick Commands
 
 ### Windows
 ```bash
@@ -233,7 +233,7 @@ python app.py
 python3 app.py
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -243,11 +243,8 @@ python3 app.py
 6. Push to the branch (`git push origin feature/amazing-feature`)
 7. Open a Pull Request
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Volatility Foundation**: For the Volatility3 framework
 - **YARA Project**: For the pattern matching engine
@@ -255,14 +252,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Font Awesome**: For the icon library
 - **Flask Team**: For the web framework
 
-## 📞 Support
 
-For issues and questions:
-- Create an issue on [GitHub](https://github.com/aryanxsh/memory-forensics-dashboard/issues)
-- Check the troubleshooting section
-- Review the documentation
-
-## 📊 Project Stats
+##  Project Stats
 
 - **514 files** committed
 - **158,667 lines** of code
@@ -272,6 +263,6 @@ For issues and questions:
 
 ---
 
-**⭐ Star this repository if you find it useful!**
+
 
 **🔗 Repository**: https://github.com/aryanxsh/memory-forensics-dashboard
