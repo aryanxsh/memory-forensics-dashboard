@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Memory Forensics for Malware Forensics
 
 > 🧠 Advanced memory forensics and malware analysis toolkit with a modern web-based dashboard
@@ -211,3 +212,6 @@ For issues and questions:
 **⚠️ Important Note**: Some directory names are **hardcoded**, such as `Memory-Forensics-for-Malware-Forensics` in `scripts/volatile.py` as a parent folder. Please ensure your project directory name matches or update paths accordingly.
 
  
+=======
+"# memory-forensics-dashboard" 
+>>>>>>> 4903ed5ff30ee4649dc86961c1331c4203c8f7e7
