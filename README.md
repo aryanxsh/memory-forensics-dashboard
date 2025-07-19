@@ -22,8 +22,8 @@
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/YogeshJain1003/Memory-Forensics-for-Malware-Forensics.git
-   cd Memory-Forensics-for-Malware-Forensics
+   git clone https://github.com/aryanxsh/memory-forensics-dashboard.git
+   cd memory-forensics-dashboard
    ```
 
 2. **Install Dependencies:**
