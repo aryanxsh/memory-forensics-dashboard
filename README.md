@@ -1,6 +1,6 @@
 # Memory Forensics Dashboard
 
-> 🧠 Advanced memory forensics and malware analysis toolkit with a modern web-based dashboard
+>  Advanced memory forensics and malware analysis toolkit with a modern web-based dashboard
 
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/downloads/)
 [![Flask](https://img.shields.io/badge/Flask-2.3.3-green.svg)](https://flask.palletsprojects.com/)
@@ -172,7 +172,7 @@ The dashboard uses Bootstrap 5 with custom CSS. Key styling classes:
 - **Memory Dumps**: Handle sensitive memory dumps with appropriate security measures
 - **YARA Rules**: Keep rules updated for latest threat detection
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -206,13 +206,14 @@ Enable debug mode for detailed error messages:
 app.run(debug=True, host='0.0.0.0', port=5000)
 ```
 
-## 📈 Performance Tips
+##  Performance Tips
 
 - **Large Memory Dumps**: Use appropriate Volatility plugins for large files
 - **YARA Rules**: Optimize rule sets for your specific use case
 - **Output Management**: Regularly clean up old reports
 - **Resource Monitoring**: Monitor system resources during analysis
 
+<<<<<<< HEAD
 ## 🚀 Quick Commands
 
 ### Windows
@@ -242,12 +243,33 @@ python3 app.py
 5. Commit your changes (`git commit -m 'Add amazing feature'`)
 6. Push to the branch (`git push origin feature/amazing-feature`)
 7. Open a Pull Request
+=======
+##  Quick Commands
 
-## 📄 License
+### Windows
+```bash
+# Start with batch file
+start.bat
+>>>>>>> 805aa973abf3a76798c7558c89cca21b6e89cbb6
 
+# Or manually
+python app.py
+```
+
+<<<<<<< HEAD
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+=======
+### Linux/Mac
+```bash
+# Start with shell script
+./start.sh
+>>>>>>> 805aa973abf3a76798c7558c89cca21b6e89cbb6
 
-## 🙏 Acknowledgments
+# Or manually
+python3 app.py
+```
+
+##  Acknowledgments
 
 - **Volatility Foundation**: For the Volatility3 framework
 - **YARA Project**: For the pattern matching engine
@@ -255,14 +277,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Font Awesome**: For the icon library
 - **Flask Team**: For the web framework
 
-## 📞 Support
+##  Support
 
 For issues and questions:
 - Create an issue on [GitHub](https://github.com/aryanxsh/memory-forensics-dashboard/issues)
 - Check the troubleshooting section
 - Review the documentation
 
+<<<<<<< HEAD
 ## 📊 Project Stats
+=======
+##  Project Stats
+>>>>>>> 805aa973abf3a76798c7558c89cca21b6e89cbb6
 
 - **514 files** committed
 - **158,667 lines** of code
@@ -272,6 +298,11 @@ For issues and questions:
 
 ---
 
+<<<<<<< HEAD
 **⭐ Star this repository if you find it useful!**
 
 **🔗 Repository**: https://github.com/aryanxsh/memory-forensics-dashboard
+=======
+
+** Repository**: https://github.com/aryanxsh/memory-forensics-dashboard
+>>>>>>> 805aa973abf3a76798c7558c89cca21b6e89cbb6
